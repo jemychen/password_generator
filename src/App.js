@@ -5,7 +5,12 @@ let password = document.getElementById("password")
     let characters = '0123456789abcdefghijklmnopqrstuvwxz!!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXZ'
     let passwordLength = 8
     let password = ''
-    
+    for (let i = 0; i < passwordLength; i++) {
+      let randomNumber = Math.floor(Math.random() * characters.length)
+      password += characters.substring(randomNumber, randomNumber + 1)
+    }
+    document.getElementById('password').value = password
   }
+  
 
 export default App;
