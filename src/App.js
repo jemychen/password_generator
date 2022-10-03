@@ -11,6 +11,10 @@ let password = document.getElementById("password")
     }
     document.getElementById('password').value = password
   }
-  
-
-export default App;
+  function copyPW(){
+    let copyText = document.getElementById('password')
+    copyText.ariaSelected()
+    copyText.setSelectionRange(0, 999)
+    document.execCommand('copy')
+  }
+;
