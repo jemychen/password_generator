@@ -13,3 +13,17 @@ body {
   min-height: 100vh;
 }
 
+.box {
+  background-color: white;
+  padding-top: 30px;
+  padding: 30px;
+}
+
+.box h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 26px;
+  color: #015a96;
+  font-family: sans-serif;
+}
+
